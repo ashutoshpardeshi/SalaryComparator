@@ -1,0 +1,23 @@
+<html>
+<h1>Enter Benefits:</h1>
+
+
+
+<%= form_tag("/update",:method => "post") do %>
+    <%= label_tag("Company Name: ") %>
+    <%= text_field_tag(:companyname, @companyName,{ :size => 80, :maxlength => 255}) %>  </br>
+    <%= label_tag("Position Name: ") %>
+    <%= text_field_tag(:position, @position,{ :size => 80, :maxlength => 255}) %>  </br>
+    <%= label_tag("Base Pay: ") %>
+    <%= text_field_tag(:basepay, @basepay,{ :size => 80, :maxlength => 255}) %>  </br>
+    <%= label_tag("stocks: ") %>
+    <%= text_field_tag(:stocks, @stocks,{ :size => 80, :maxlength => 255}) %>  </br>
+
+    <%= submit_tag("Update") %>
+
+<% end %>
+
+
+
+
+</html>
